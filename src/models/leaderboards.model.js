@@ -6,7 +6,15 @@ const DataTypes = Sequelize.DataTypes;
 module.exports = function (app) {
   const sequelizeClient = app.get('sequelizeClient');
   const leaderboards = sequelizeClient.define('leaderboards', {
-    text: {
+    player: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    score: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    levelId: {
       type: DataTypes.STRING,
       allowNull: false
     }
