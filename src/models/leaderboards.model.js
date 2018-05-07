@@ -11,7 +11,7 @@ module.exports = function (app) {
       allowNull: false
     },
     score: {
-      type: DataTypes.STRING,
+      type: DataTypes.BIGINT,
       allowNull: false
     },
     levelId: {
